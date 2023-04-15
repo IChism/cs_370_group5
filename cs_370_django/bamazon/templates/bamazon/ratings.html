@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "bamazon/meta.html" with title="Ratings" %}
+<body>
+    {% include "bamazon/header.html" %}
+    <div class="container">
+        <h1>Ratings</h1>
+        <table class="table">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+            {% for rating in ratings %}
+            <tr>
+                <td>{{ category.id }}</td>
+                <td>{{ category.code }}</td>
+                <td>{{ category.full_name }}</td>
+                <td>{{ category.description }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <table class="table">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                        {% if rating.media %}
+                        {% for medium in rating.media %}
+                        <tr>
+                            <td>{{ medium.id }}</td>
+                            <td>{{ medium.title }}</td>
+                            <td>{{ medium.description }}</td>
+                        </tr>
+                        {% endfor %}
+                        {% else %}
+                        <tr><td colspan="5">No media available.</td></tr>
+                        {% endif %}
+                    </table>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+    {% include "bamazon/footer.html" %}
+</body>
+</html>

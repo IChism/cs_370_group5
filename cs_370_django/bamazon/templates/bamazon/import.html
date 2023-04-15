@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "bamazon/meta.html" with title="Import" %}
+<body>
+    {% include "bamazon/header.html" %}
+    <div class="container">
+        <h1>Import</h1>
+        <h2>Import Categories</h2>
+        <form enctype="multipart/form-data" action="/categories" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Import Customers</h2>
+        <form enctype="multipart/form-data" action="/customers" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Import Ratings</h2>
+        <form enctype="multipart/form-data" action="/ratings" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    {% include "bamazon/footer.html" %}
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "bamazon/meta.html" with title="Products" %}
+<body>
+    {% include "bamazon/header.html" %}
+    <div class="container">
+        <h1>Categories</h1>
+        <table class="table">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Description</th>
+            </tr>
+            {% for category in categories %}
+            <tr>
+                <td>{{ category.id }}</td>
+                <td>{{ category.description }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <table class="table">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">List Price</th>
+                        </tr>
+                        {% for product in category.products %}
+                        <tr>
+                            <td>{{ product.id }}</td>
+                            <td>{{ product.name }}</td>
+                            <td>{{ product.description }}</td>
+                            <td>{{ product.list_price }}</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td colspan="3">
+                                <table class="table">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Customer</th>
+                                        <th>Stars</th>
+                                    </tr>
+                                    {% for review in product.reviews %}
+                                    <tr>
+                                        <td>{{ review.id }}</td>
+                                        <td>{{ review.customer.name }}</td>
+                                        <td>{{ review.stars }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </table>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+    {% include "bamazon/footer.html" %}
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "bamazon/meta.html" with title="Customers" %}
+<body>
+    {% include "bamazon/header.html" %}
+    <div class="container">
+        <h1>Customers</h1>
+        <table class="table">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Prime User</th>
+            </tr>
+            {% for customer in customers %}
+            <tr>
+                <td>{{ category.id }}</td>
+                <td>{{ customer.name }}</td>
+                <td>{{ category.prime_user }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <table class="table">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Shipping Address</th>
+                        </tr>
+                        {% for order in customer.orders %}
+                        <tr>
+                            <td>{{ order.id }}</td>
+                            <td>{{ order.shipping_address }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <table class="table">
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Quantity</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                    {% for order_detail in order.details %}
+                                    <tr>
+                                        <td>{{ order_detail.product.name }}</td>
+                                        <td>{{ order_detail.quantity }}</td>
+                                        <td>{{ order_detail.cost }}</td>
+                                    </tr>
+                                    {% endfor %}
+                        {% endfor %}
+                    </table>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+    {% include "bamazon/footer.html" %}
+</body>
+</html>
