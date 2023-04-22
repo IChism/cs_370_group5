@@ -1,0 +1,31 @@
+﻿Product_id,Product_title,Product_description,Category_id,List_price
+1,Apple iPhone 12,The latest Apple smartphone with 5G capability,1,799
+2,Amazon Echo Dot,A smart speaker that can be controlled by voice,1,39.99
+3,Harry Potter and the Philosopher's Stone,The first book in the popular Harry Potter series,2,10.99
+4,Instant Pot Duo 7-in-1 Electric Pressure Cooker,A versatile and easy-to-use kitchen appliance,3,99.95
+5,Cetaphil Daily Facial Cleanser,A gentle and effective face wash for all skin types,4,9.99
+6,LEGO Star Wars Death Star,A highly detailed and collectible LEGO set,5,399.99
+7,Band-Aid Brand Adhesive Bandages,A pack of assorted adhesive bandages for cuts and scrapes,6,5.99
+8,Under Armour Men's Tech 2.0 Short Sleeve T-Shirt,A lightweight and breathable athletic shirt,7,24.99
+9,YETI Rambler 30 oz Tumbler,A durable and insulated travel mug for hot or cold drinks,8,34.99
+10,DEWALT 20V MAX Cordless Drill,A powerful and versatile drill for all your DIY projects,9,129.99
+11,Samsung Galaxy S21 Ultra,A top-of-the-line Samsung smartphone with 5G capability,1,1199
+12,Bose QuietComfort 35 II Wireless Headphones,A premium noise-cancelling headphone with voice assistant,1,349.99
+13,Fitbit Charge 4 Fitness Tracker,A popular wearable device that tracks your fitness and health metrics,1,129.95
+14,Dell XPS 13 Laptop,A high-performance and lightweight laptop with long battery life,2,1299.99
+15,Microsoft Office 365 Home Subscription,A one-year subscription to the popular office software suite,2,99.99
+16,Google Nest Thermostat,A smart thermostat that can help you save energy and money,3,129
+17,Philips Sonicare DiamondClean Toothbrush,A high-end electric toothbrush with advanced features,4,199.99
+18,Cuisinart Toaster Oven,"A versatile and compact kitchen appliance for baking, broiling, and toasting",3,99
+19,Nike Air Zoom Pegasus 38 Running Shoes,A popular running shoe with responsive cushioning and a sleek design,7,119.99
+20,GoPro HERO10 Black Action Camera,A top-of-the-line action camera with advanced features and image stabilization,5,499.99
+21,Canon EOS R5 Mirrorless Camera,A high-end mirrorless camera with advanced features and image quality,11,3899
+22,Breville Barista Express Espresso Machine,A high-quality and user-friendly espresso machine for home use,11,699.99
+23,Apple MacBook Pro,A powerful and feature-packed laptop for professional use,12,1999
+24,Sony PlayStation 5 Gaming Console,A next-generation gaming console with immersive graphics and gameplay,13,499.99
+25,Logitech MX Master 3 Wireless Mouse,A premium wireless mouse with advanced features and customizable controls,14,99.99
+26,Samsung 49-Inch Odyssey G9 Gaming Monitor,A top-of-the-line gaming monitor with ultra-fast refresh rate and immersive design,15,1499.99
+27,Adidas Ultraboost 21 Running Shoes,A popular running shoe with advanced cushioning and stylish design,16,179.99
+28,Fitbit Sense Advanced Smartwatch,"A high-end smartwatch that tracks your fitness, health,  and stress levels",17,329.95
+29,Le Creuset Signature Round Dutch Oven,A high-quality and stylish Dutch oven for cooking and baking,18,369.99
+30,All-Clad D3 Stainless Steel Cookware Set,A premium and durable cookware set for all your cooking needs,19,799.99
