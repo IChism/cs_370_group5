@@ -2,27 +2,38 @@
 <html lang="en">
 {% include "bamazon/meta.html" with title="Import" %}
 <body>
-    {% include "bamazon/header.html" %}
+    {% include "bamazon/header.html" with import="active"%}
     <div class="container">
-        <h1>Import</h1>
-        <h2>Import Categories</h2>
-        <form enctype="multipart/form-data" action="/categories" method="post">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" value="Submit">
-        </form>
-        <h2>Import Customers</h2>
-        <form enctype="multipart/form-data" action="/customers" method="post">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" value="Submit">
-        </form>
-        <h2>Import Ratings</h2>
-        <form enctype="multipart/form-data" action="/ratings" method="post">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" value="Submit">
-        </form>
+    <div class="row">
+        <h1 class="my-3 py-1 border-bottom border-dark">Import Data</h1>
+        <div class="col border py-4">
+            <h2>Import Categories</h2>
+            <form enctype="multipart/form-data" action="/categories" method="post">
+                {% csrf_token %}
+                <input type="file" accept=".csv" name="import_file" class="form-control" required id="id_import_file">
+                <br />
+                <input type="submit" class="btn btn-outline-success" value="Submit">
+            </form>
+        </div>
+        <div class="col border mx-3 py-4">
+            <h2>Import Customers</h2>
+            <form enctype="multipart/form-data" action="/customers" method="post">
+                {% csrf_token %}
+                <input type="file" accept=".csv" name="import_file" class="form-control" required id="id_import_file">
+                <br />
+                <input type="submit" class="btn btn-outline-success" value="Submit">
+            </form>
+        </div>
+        <div class="col border py-4">
+            <h2>Import Ratings</h2>
+            <form enctype="multipart/form-data" action="/ratings" method="post">
+                {% csrf_token %}
+                <input type="file" accept=".csv" name="import_file" class="form-control" required id="id_import_file">
+                <br />
+                <input type="submit" class="btn btn-outline-success" value="Submit">
+            </form>
+        </div>
+    </div>
     </div>
     
     {% include "bamazon/footer.html" %}

@@ -35,7 +35,7 @@ def import_categories(request):
     reader = csv.reader(codecs.iterdecode(file, 'utf-8'))
     for row in reader:
         cat = Category.get_or_make(description=row[0])
-        prod = Product.get_or_make(category=cat, name=row[1], description=row[2], price=row[3])
+        prod = Product.get_or_make(category=cat, name=row[1], description=row[2], list_price=row[3])
         # TODO: import reviews? check how to make this work with user field (nullable user?)
 
 def import_customers(request):
