@@ -7,6 +7,9 @@ from django.shortcuts import render
 from bamazon.models import *
 from bamazon.forms import *
 
+def index(request):
+    return render(request, "bamazon/index.html", {})
+
 def categories(request):
     context = {"categories": Category.objects.all()}
     if request.method == "POST":

@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include "bamazon/meta.html" with title="Products" %}
+{% include "bamazon/meta.html" with title="Bamazon" %}
 <body>
     {% include "bamazon/header.html" %}
-    <h1 class="display-1">Bamazon Admin Panel</h1>
+    <div class="container">
+        <h1 class="display-1">Bamazon Admin Panel</h1>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="import">Import tables</a>
+            <a class="list-group-item list-group-item-action" href="categories">View Categories Report</a>
+            <a class="list-group-item list-group-item-action" href="customers">View Customers Report</a>
+            <a class="list-group-item list-group-item-action" href="ratings">View Ratings Report</a>
+        </div>
+    </div>
     {% include "bamazon/footer.html" %}
 </body>
 </html>
