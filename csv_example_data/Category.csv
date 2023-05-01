@@ -1,21 +1,21 @@
-﻿Category_int,Category_description,
-1,Electronics,
-2,Books,
-3,Home & Kitchen,
-4,Beauty & Personal Care,
-5,Toys & Games,
-6,Health & Household,
-7,"Clothing, Shoes, Jewelry",
-8,Sports & Outdoors,
-9,Pet Supplies,
-10,Tools & Home Improvement,
-11,Office Products,
-12,Video Games,
-13,Grocery & Gourmet Food,
-14,Automotive,
-15,Musical Instruments,
-16,Industrial & Scientific,
-17,"Arts,Crafts, Sewing", 
-18,Movies & TV,
-19,Baby,
-20,Kindle Store,
+Cat_Desc,Prod_Name,Prod_Desc,Prod_Price
+Food,"Kettle Corn","Sweet popcorn for any situation",14.75
+Electronics,Apple iPhone 13,The iPhone 13 is the latest flagship smartphone from Apple Inc.,999.00
+Home and Kitchen,KitchenAid Artisan Stand Mixer,The KitchenAid Artisan Stand Mixer is a powerful and versatile kitchen appliance used for mixing, kneading, and whipping,399.00
+Sports and Outdoors,Fitbit Charge 5,The Fitbit Charge 5 is a fitness tracker that monitors your activity, sleep, and heart rate,149.95
+Beauty and Personal Care,La Roche-Posay Anthelios Clear Skin Oil-Free Sunscreen,The La Roche-Posay Anthelios Clear Skin sunscreen is designed to provide broad-spectrum UVA/UVB protection without clogging pores,19.99
+Books,Atomic Habits by James Clear,Atomic Habits is a self-help book that provides practical strategies for building good habits and breaking bad ones,18.99
+Pet Supplies,Blue Buffalo Life Protection Formula Adult Dog Food,Blue Buffalo Life Protection Formula dog food is made with real meat and vegetables and contains no chicken or poultry by-product meals,32.98
+Electronics,Sony WH-1000XM4 Wireless Noise-Cancelling Headphones,The Sony WH-1000XM4 headphones feature advanced noise-cancellation technology and high-quality sound,348.00
+Home and Kitchen,Vitamix 5200 Blender,The Vitamix 5200 blender is a high-performance blender that can be used for blending, grinding, and chopping,449.95
+Sports and Outdoors,Spalding NBA Street Basketball,The Spalding NBA Street basketball is a high-quality basketball that can be used for both indoor and outdoor play,17.99
+Beauty and Personal Care,Maybelline New York Lash Sensational Mascara,The Maybelline New York Lash Sensational mascara is designed to give your lashes a full and voluminous look,8.99
+Books,The Alchemist by Paulo Coelho,The Alchemist is a novel about a shepherd boy who embarks on a journey to find his destiny,14.99
+Pet Supplies,Purina ONE Natural Dry Cat Food,The Purina ONE Natural cat food is made with real chicken and contains no artificial colors or flavors,24.99
+Electronics,Microsoft Surface Laptop 4,The Microsoft Surface Laptop 4 is a high-performance laptop computer that features a touch screen and a long battery life,999.99
+Home and Kitchen,Instant Pot Duo Nova Pressure Cooker,The Instant Pot Duo Nova is a versatile kitchen appliance that can be used as a pressure cooker, slow cooker, rice cooker, and more,119.99
+Sports and Outdoors,Osprey Atmos AG 65 Backpack,The Osprey Atmos AG 65 backpack is a high-quality backpack designed for hiking and outdoor activities,270.00
+Beauty and Personal Care,Cetaphil Gentle Skin Cleanser,The Cetaphil Gentle Skin Cleanser is a mild and non-irritating cleanser that is gentle enough for all skin types,11.99
+Books,The Girl with the Dragon Tattoo by Stieg Larsson,The Girl with the Dragon Tattoo is a crime novel about a journalist and a computer hacker who investigate a series of murders,9.99
+Pet Supplies,KONG Classic Dog Toy,The KONG Classic dog toy is made of durable rubber and can be filled with treats to keep your dog entertained,12.99
+Electronics,Canon EOS Rebel
