@@ -1,0 +1,20 @@
+Cust_Name,Cust_Prime_User,Ord_Shipping_Addr,Detail_Product,Detail_Quantity,Detail_Cost
+John Doe,false,123 Main St,Apple iPhone 13,2,1998.00
+Jane Smith,true,456 Oak Ave,KitchenAid Artisan Stand Mixer,1,399.00
+Bob Johnson,false,789 Maple Ln,Fitbit Charge 5,1,149.95
+Emily Chen,true,234 Cherry Dr,La Roche-Posay Anthelios Clear Skin Oil-Free Sunscreen,3,59.97
+Mike Wilson,false,567 Pine Rd,Atomic Habits by James Clear,2,37.98
+Kelly Brown,true,890 Cedar Blvd,Blue Buffalo Life Protection Formula Adult Dog Food,4,131.92
+Adam Lee,false,901 Elm St,Sony WH-1000XM4 Wireless Noise-Cancelling Headphones,1,348.00
+Samantha Lee,true,345 Oakwood Rd,Vitamix 5200 Blender,1,449.95
+Dave Johnson,false,678 Maple Ave,Spalding NBA Street Basketball,2,35.98
+Mary Smith,true,123 Cherry St,Maybelline New York Lash Sensational Mascara,3,26.97
+Tom Wilson,false,456 Pine St,The Alchemist by Paulo Coelho,1,14.99
+Karen Brown,true,789 Cedar Dr,Purina ONE Natural Dry Cat Food,2,49.98
+Steve Chen,false,234 Elm St,Microsoft Surface Laptop 4,1,999.99
+Julie Wilson,true,567 Oakwood Blvd,Instant Pot Duo Nova Pressure Cooker,1,119.99
+Chris Lee,false,890 Cedar Ln,Osprey Atmos AG 65 Backpack,1,270.00
+Ashley Johnson,true,901 Maple Dr,Cetaphil Gentle Skin Cleanser,2,23.98
+Kim Smith,false,345 Pine Ave,The Girl with the Dragon Tattoo by Stieg Larsson,3,29.97
+Mark Johnson,true,678 Oak Blvd,KONG Classic Dog Toy,1,12.99
+
