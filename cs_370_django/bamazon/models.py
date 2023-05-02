@@ -14,13 +14,17 @@ class Customer(models.Model):
     prime_user = models.BooleanField()
     # I don't think this should be in; it looks unnormalized
     # gift_card_balance = models.IntegerField()
+    
+    def orders(self):
+        return Order.objects.all().filter(customer=self)
+    
     def get_or_make(**kwargs):
         try:
             return Customer.objects.get(**kwargs)
         except Customer.DoesNotExist:
             cust = Customer(**kwargs)
             cust.save()
-            return cust
+            return cust    
 
 class Category(models.Model):
     description = models.CharField(max_length=100)
@@ -69,7 +73,9 @@ class Cart(models.Model):
 class Order(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.RESTRICT)
     shipping_address = models.CharField(max_length=50)
-
+    def details(self):
+        return OrderDetail.objects.all().filter(order=self)
+    
     def get_or_make(**kwargs):
         try:
             return Order.objects.get(**kwargs)
@@ -82,7 +88,7 @@ class OrderDetail(models.Model):
     order = models.ForeignKey(Order, on_delete=models.RESTRICT)
     product = models.ForeignKey(Product, on_delete=models.RESTRICT)
     quantity = models.IntegerField()
-    cost = models.DecimalField(max_digits=5, decimal_places=2)
+    cost = models.DecimalField(max_digits=10, decimal_places=2)
 
     def get_or_make(**kwargs):
         try:

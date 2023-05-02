@@ -13,13 +13,13 @@
             </tr>
             {% for customer in customers %}
             <tr>
-                <td>{{ category.id }}</td>
+                <td>{{ customer.id }}</td>
                 <td>{{ customer.name }}</td>
-                <td>{{ category.prime_user }}</td>
+                <td>{{ customer.prime_user }}</td>
             </tr>
             <tr>
                 <td></td>
-                <td>
+                <td colspan="2">
                     <table class="table">
                         <tr>
                             <th scope="col">#</th>
@@ -46,6 +46,8 @@
                                         <td>{{ order_detail.cost }}</td>
                                     </tr>
                                     {% endfor %}
+                                </table>
+                            </td>
                         {% endfor %}
                     </table>
                 </td>

@@ -32,25 +32,6 @@
                             <td>{{ product.description }}</td>
                             <td>{{ product.list_price }}</td>
                         </tr>
-                        <tr>
-                            <th></th>
-                            <td colspan="3">
-                                <table class="table">
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Customer</th>
-                                        <th>Stars</th>
-                                    </tr>
-                                    {% for review in product.reviews %}
-                                    <tr>
-                                        <td>{{ review.id }}</td>
-                                        <td>{{ review.customer.name }}</td>
-                                        <td>{{ review.stars }}</td>
-                                    </tr>
-                                    {% endfor %}
-                                </table>
-                            </td>
-                        </tr>
                         {% endfor %}
                     </table>
                 </td>
